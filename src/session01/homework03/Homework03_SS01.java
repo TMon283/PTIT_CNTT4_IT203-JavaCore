@@ -1,4 +1,4 @@
-package session01.bai1;
+package session01.homework01;
 
 public class Homework03_SS01 {
     public static void main(String[] args){
