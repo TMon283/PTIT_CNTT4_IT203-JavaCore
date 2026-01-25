@@ -1,0 +1,10 @@
+# IntelliJ / IDE
+.idea/
+*.iml
+
+# Output
+out/
+target/
+
+# OS
+.DS_Store
