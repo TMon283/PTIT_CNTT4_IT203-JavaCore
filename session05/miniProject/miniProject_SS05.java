@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class miniProject_SS05 {
-    // FR1
+    // CASE 1
     public static void twoSum() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập số phần tử mảng: ");
@@ -132,11 +132,11 @@ public class miniProject_SS05 {
 
         do {
             System.out.println("\n===== MENU =====");
-            System.out.println("1. Two Sum");
-            System.out.println("2. Move Zeroes");
+            System.out.println("1. Tìm cặp số có tổng bằng K");
+            System.out.println("2. Dồn số 0 về cuối");
             System.out.println("3. Kiểm tra chuỗi đối xứng");
             System.out.println("4. Đảo ngược từ trong câu");
-            System.out.println("5. Happy Number");
+            System.out.println("5. Số hạnh phúc");
             System.out.println("0. Thoát");
             System.out.print("Chọn chức năng: ");
 
