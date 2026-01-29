@@ -12,30 +12,30 @@ public class btth_SS05 {
         int size = 0;
 
         while (true) {
-            System.out.println("\n=== Quản lý MSSV (Array) ===");
-            System.out.println("1. Thêm mới");
-            System.out.println("2. Cập nhật theo index");
-            System.out.println("3. Xóa theo MSSV");
-            System.out.println("4. Tìm kiếm (không phân biệt hoa thường)");
-            System.out.println("5. Hiển thị danh sách");
+            System.out.println("\n=== Quản lý MSSV ===");
+            System.out.println("1. Hiển thị");
+            System.out.println("2. Thêm mới");
+            System.out.println("3. Cập nhật");
+            System.out.println("4. Xóa");
+            System.out.println("5. Tìm kiếm");
             System.out.println("0. Thoát");
             System.out.print("Chọn: ");
             String choice = sc.nextLine().trim();
 
             switch (choice) {
                 case "1":
-                    size = addNew(arr, size);
+                    display(arr, size);
                     break;
                 case "2":
-                    updateByIndex(arr, size);
+                    size = addNew(arr, size);
                     break;
                 case "3":
-                    size = deleteByMSSV(arr, size);
+                    updateByIndex(arr, size);
                     break;
                 case "4":
+                    size = deleteByMSSV(arr, size);
                     break;
                 case "5":
-                    display(arr, size);
                     break;
                 case "0":
                     System.out.println("Kết thúc chương trình.");
