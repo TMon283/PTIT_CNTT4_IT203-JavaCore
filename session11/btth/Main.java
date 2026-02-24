@@ -16,6 +16,9 @@ public class Main {
                 drinks[i].displayInfo();
                 drinks[i].calculatePrice();
             }
+            if (drinks[i] instanceof IMixable) {
+                ((IMixable) drinks[i]).mix();
+            }
         }
     }
 }
