@@ -19,9 +19,9 @@ public class Coffee extends Drink {
     @Override
     public void displayInfo() {
         if (hasMilk) {
-            System.out.println("Mã: "+ id +" - Tên: "+ name +" - Giá gốc: "+ price +" - Có sữa");
+            System.out.println("Mã: "+ id +" - Tên: "+ name +" - Giá gốc: "+ calculatePrice() +" - Có sữa");
         } else {
-            System.out.println("Mã: "+ id +" - Tên: "+ name +" - Giá gốc: "+ price +" - Đen đá");
+            System.out.println("Mã: "+ id +" - Tên: "+ name +" - Giá gốc: "+ calculatePrice() +" - Đen đá");
         }
     }
 }
