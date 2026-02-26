@@ -32,7 +32,7 @@ public class Mage extends GameCharacter implements ISkill {
         if (mana >= 50) {
             mana -= 50;
             int damage = attackPower * 3;
-            System.out.println("Vụ nổ vũ trụ được tung ra, gây " + damage + " sát thương lên " + target.getName() + " (mana còn " + mana + ")");
+            System.out.println("Vụ nổ vũ trụ được tung ra, tiêu hao 50 mana, gây " + damage + " sát thương lên " + target.getName() + " (còn lại " + mana + " mana)");
             target.takeDamage(damage);
         } else {
             System.out.println("Không đủ mana để dùng Vụ nổ vũ trụ (cần >= 50, hiện có " + mana + ")");

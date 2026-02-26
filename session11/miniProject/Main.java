@@ -4,10 +4,10 @@ public class Main {
     public static void main(String[] args) {
         GameCharacter[] characters = new GameCharacter[3];
 
-        Warrior warrior = new Warrior("Yasuo", 120, 20, 5);
-        Mage mage = new Mage("Veigar", 80, 30, 60);
+        Warrior warrior = new Warrior("Yasuo", 200, 30, 5);
+        Mage mage = new Mage("Veigar", 120, 40, 60);
 
-        GameCharacter goblin = new GameCharacter("Goblin", 50, 0) {
+        GameCharacter goblin = new GameCharacter("Goblin", 100, 0) {
             @Override
             public void attack(GameCharacter target) {
                 System.out.println("Goblin cắn trộm " + target.getName() + " và gây 10 sát thương");
@@ -19,7 +19,7 @@ public class Main {
         characters[1] = mage;
         characters[2] = goblin;
 
-        System.out.println("=== BẮT ĐẦU MÔ PHỎNG TRẬN ĐẤU ===");
+        System.out.println("--- BẮT ĐẦU MÔ PHỎNG TRẬN ĐẤU ---");
 
         System.out.println("\n--- Vòng 1 ---");
         if (characters[0] != null && characters[1] != null) {
@@ -40,7 +40,7 @@ public class Main {
             ((ISkill) characters[1]).useUltimate(characters[2]);
         }
 
-        System.out.println("\n=== KẾT THÚC TRẬN ĐẤU ===");
+        System.out.println("\n--- KẾT THÚC TRẬN ĐẤU ---");
         System.out.println("Tổng số nhân vật đã tạo: " + GameCharacter.count);
 
         for (int i = 0; i < characters.length; i++) {
