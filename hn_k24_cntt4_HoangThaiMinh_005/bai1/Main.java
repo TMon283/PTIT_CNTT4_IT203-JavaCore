@@ -48,11 +48,15 @@ public class Main {
             }
         }
 
-        Set<Integer> set = new HashSet<>();
-        System.out.println("Min: "+ min);
-        System.out.println("Max: "+ max);
-        System.out.println("Average: "+ sum/n);
-        System.out.println("Unique(Desc): "+ set);
-        System.out.println("Express: "+ express);
+        Set<Integer> set = new HashSet<>(list);
+        List<Integer> uniqueList = new ArrayList<>(set);
+        uniqueList.sort(Collections.reverseOrder());
+
+        System.out.println("Min: " + min);
+        System.out.println("Max: " + max);
+        System.out.println("Average: " + sum / n);
+        System.out.println("Unique(Desc): " + uniqueList);
+        System.out.println("Express: " + express);
+
     }
 }
